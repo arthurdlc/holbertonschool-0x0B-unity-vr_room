@@ -141,7 +141,12 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 22a5f4305b41aa548b89b48d4f1a7933, type: 2}
+  - {fileID: 11400000, guid: 00436d03d4535b3408b474be523a3dd5, type: 2}
+  - {fileID: 11400000, guid: 0d59a45261e6cbe4e9118ceaf01b0d58, type: 2}
+  - {fileID: 3680009554786006374, guid: 2495e3db9fa76b047a1d17b692b39561, type: 2}
+  - {fileID: -3786148135604922205, guid: 54e70a55e31849b4ea1de2f0ad4c221b, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -826,7 +831,10 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
